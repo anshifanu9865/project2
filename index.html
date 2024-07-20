@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html data-bs-theme="ff">
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen'
+        href='https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css'>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <!-- <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script >
+        $(document).ready(function(){
+            $(".btn1").click(function(){
+                $('html').attr("data-bs-theme","dark");
+                $('.inbox-end').css("color",'white');
+            })
+            $(".btn2").click(function(){
+                $('html').attr("data-bs-theme","light");
+                $('.inbox-end').css("color",'black');
+            })
+        })
+    </script> -->
+</head>
+
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="50">
+    <style>
+        html,
+        body {
+            position: relative;
+            height: 100%;
+        }
+
+        body {
+            /* background: #eee; */
+            font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            color: #000;
+            margin: 0;
+            padding: 0;
+        }
+
+        swiper-container {
+            width: 100%;
+            height: 100%;
+        }
+
+        swiper-slide {
+            text-align: center;
+            font-size: 18px;
+            background: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        swiper-slide img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        swiper-container {
+            margin-left: auto;
+            margin-right: auto;
+        }
+    </style>
+    
+<!-- 
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark navbar-toggler fixed-top ">
+        <div class="container-fluid ">
+            
+            <ul class="navbar-nav navbar-toggler-icon">
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#sec1">Section 1</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#sec2">Section 2</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#sec3">Section 3</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#sec4">Section 4</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#sec5">Section 5</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#sec6">Section 6</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#sec7">Section 7</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " href="#sec8">Section 8</a>
+                </li>
+            </ul>
+        </div>
+    </nav> -->
+
+    <!-- <button class="btn btn1 btn-dark">Dark</button>
+  <button class="btn btn2 btn-light">light</button> -->
+    <section id="sec1">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 ">
+                    
+                    <nav class="navbar navbar-expand-sm navbar-light bg-no color">
+                        <div class="container-fluid">
+                            <img src="img/indo.logo1.webp" class="rounded-circle" alt="Cinque Terre" width="150"
+                                height="100">
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#mynavbar">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <div class="collapse navbar-collapse" id="mynavbar">
+                                <ul class="navbar-nav me-auto">
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="E:\anshif\bootstrap\project bootstrap.html">HOME</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="E:\anshif\bootstrap\forms.html">FORM</a>
+                                    </li>
+
+                                </ul>
+                                <form class="d-flex">
+                                    <input class="form-control me-2" type="text" placeholder="Search">
+                                    <button class="btn btn-primary" type="button">Search</button>
+                                </form>
+                            </div>
+                        </div>
+                    </nav>
+
+                    <div class="inbox">
+                        <h1>INDOCHINO</h1>
+                        <p>MADE TO MEASURE</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="sec2">
+
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-12">
+
+                    <swiper-container class="mySwiper" pagination="true" pagination-clickable="true" navigation="true"
+                        space-between="30" centered-slides="true" autoplay-delay="2500"
+                        autoplay-disable-on-interaction="false">
+                        <swiper-slide>
+                            <div class="pic1 w-100">
+                                <h3 class="s">THE TAILOR IS IN </h3>
+                                <p class="p">The ultimate custom menswear experience <br>is now open in <b>chinook
+                                        center</b></p>
+                                <div class="line_contain">
+                                    <div class="line"></div>
+                                </div>
+                                <div class="inbox2">
+                                    <p class="para">visit us by april 30 to entered in a draw <br>for a perfectly
+                                        tailored wardrobe</p>
+                                </div>
+                                <a href="forms.html"> <button type="button" class="btn btn-outline-secondary">BOOK AN
+                                        APPOINTMENT </button></a>
+                            </div>
+                        </swiper-slide>
+                        <swiper-slide>
+                            <div class="pic2 w-100">
+                                <h3 class="s">THE TAILOR IS IN </h3>
+                                <p class="p">The ultimate custom menswear experience <br>is now open in <b>chinook
+                                        center</b></p>
+                                <div class="line_contain">
+                                    <div class="line"></div>
+                                </div>
+                                <div class="inbox2">
+                                    <p class="para">visit us by april 30 to entered in a draw <br>for a perfectly
+                                        tailored wardrobe</p>
+                                </div>
+                                <a href="forms.html"> <button type="button" class="btn btn-outline-secondary">BOOK AN
+                                        APPOINTMENT </button></a>
+                            </div>
+                        </swiper-slide>
+                        <swiper-slide>
+                            <div class="pic3 w-100">
+                                <h3 class="s">THE TAILOR IS IN </h3>
+                                <p class="p">The ultimate custom menswear experience <br>is now open in <b>chinook
+                                        center</b></p>
+                                <div class="line_contain">
+                                    <div class="line"></div>
+                                </div>
+                                <div class="inbox2">
+                                    <p class="para">visit us by april 30 to entered in a draw <br>for a perfectly
+                                        tailored wardrobe</p>
+                                </div>
+                                <a href="forms.html"> <button type="button" class="btn btn-outline-secondary">BOOK AN
+                                        APPOINTMENT </button></a>
+                            </div>
+                        </swiper-slide>
+                        <swiper-slide>
+                            <div class="pic4 w-100">
+                                <h3 class="s">THE TAILOR IS IN </h3>
+                                <p class="p">The ultimate custom menswear experience <br>is now open in <b>chinook
+                                        center</b></p>
+                                <div class="line_contain">
+                                    <div class="line"></div>
+                                </div>
+                                <div class="inbox2">
+                                    <p class="para">visit us by april 30 to entered in a draw <br>for a perfectly
+                                        tailored wardrobe</p>
+                                </div>
+                                <a href="forms.html"> <button type="button" class="btn btn-outline-secondary">BOOK AN
+                                        APPOINTMENT </button></a>
+                            </div>
+                        </swiper-slide>
+
+                    </swiper-container>
+
+                    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+
+
+
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <section id="sec3">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm">
+                    <div class="inbox3">
+                        <h1 class="tag">THE MADE TO MEASURE DIFFERENCE</h1>
+                        <div class="li"></div>
+                        <p class="pa">we create suits and shirts customized to your exact measurement and personal style
+                            at <br>excellent prices.</p>
+                        <a href="https://www.indochino.com/"> <button type="button"
+                                class="btn btn-outline-secondary">SEE THE SUITS </button></a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="sec4">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-4 col-lg-6 col-sm-12">
+                    <div class="inbox4">
+                        <div class="boxc">
+                            <img src="img/icons8-ruler-35.png" alt="" width="100%">
+                        </div>
+                        <h1 class="come">COME SEE US</h1>
+                        <div class="line1"></div>
+                        <p class="pro">Schedule an appointment with a style guide. <br> We'll take your measurements and
+                            walk you <br>
+                            through all your suiting options.</p>
+
+
+
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-6 col-sm-12">
+                    <div class="inbox5">
+                        <div class="boxc">
+                            <img src="img/icons8-send-backward-35.png" alt="" width="100%">
+                        </div>
+                        <h1 class="make">MAKE IT YOUR OWN</h1>
+                        <div class="line1"></div>
+                        <p class="pro">Choose the fabrics you love and the <br> customizations you can't live without-
+                            <br>
+                            everything from lapels and linings to monograms <br>
+                            and contrast buttonhole stitching. </p>
+
+                    </div>
+                </div>
+
+                <div class="col-xl-4 col-lg-6 col-sm-12">
+                    <div class="inbox6">
+                        <div class="boxc">
+                            <img src="img/icons8-suit-35.png" alt="" width="100%">
+                        </div>
+                        <h1 class="fit">PERFECT THE FIT</h1>
+                        <div class="line1"></div>
+                        <p class="pro"> When your suit arrives in four weeks, <br>come back to our showroom for any
+                            final <br>alterations-our expert tailors will ensure your <br> garment fits just right.</p>
+
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+        </div>
+    </section>
+    <section id="sec5">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm">
+                    <div class="tri">
+
+                    </div>
+                    <div class="inbox-x">
+                        <h1 class="head">VISIT US AT CHINOOK CENTER</h1>
+                        <p class="visit"> Mon to Sat 9:30-9 <br> Sun 11-7 <br>Across from Lululemon on level 1</p>
+                        <br><br>
+                        <p class="visit">Grand opening on April 6</p>
+                        <a href="forms.html"> <button type="button" class="btn btn-outline-secondary">BOOK AN
+                                APPOINTMENT </button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="sec6">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm">
+                    <div class="inbox-y">
+                        <h1 class="indo"> #INDOCHINO</h1>
+                        <div class="line1"></div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xl col-lg-4 col-sm-6">
+                    <div class="images1"></div>
+                </div>
+                <div class="col-xl col-lg-4 col-sm-6">
+                    <div class="images2"></div>
+                </div>
+                <div class="col-xl col-lg-4 col-sm-6">
+                    <div class="images3"></div>
+                </div>
+                <div class="col-xl col-lg-6 col-sm-6">
+                    <div class="images4"></div>
+                </div>
+                <div class="col-xl col-lg-6 col-sm-6">
+                    <div class="images5"></div>
+                </div>
+
+            </div>
+            <div class="row">
+                <div class="col-xl col-lg-6 col-sm-12">
+                    <div class="images6"></div>
+                </div>
+                <div class="col-xl col-lg-6 col-sm-12">
+                    <div class="images7"></div>
+                </div>
+                <div class="col-xl col-lg-6 col-sm-12">
+                    <div class="images8"></div>
+                </div>
+                <div class="col-xl col-lg-6 col-sm-12">
+                    <div class="images9"></div>
+                </div>
+                <div class="col-xl col-lg-12 col-sm-12">
+                    <div class="images10"></div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <section id="sec7">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm">
+                    <div class="inbox-z">
+                        <h1 class="bottom">INDOCHINO IN THE NEWS</h1>
+                        <h1 class="bot">"Indochino:The it's-Too-Good-To-Be- <br>True-That's-Actually-True-Custom Suit."
+                        </h1>
+                        <p class="bot">-Forbes</p>
+                        <a href="forms.html"> <button type="button" class="btn btn-outline-secondary">BOOK AN
+                                APPOINTMENT </button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="sec8">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm">
+                    <div class="inbox-lo">
+                        <div class="twitter"><a
+                                href="https://x.com/INDOCHINO?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><img
+                                    src="img/icons8-twitter-30 (2).png" alt=""></a>
+                            <a href="https://www.facebook.com/indochino/"><img src="img/icons8-facebook-30.png"
+                                    alt=""></a>
+                            <a href="https://www.instagram.com/indochino/?hl=en"><img src="img/icons8-insta-30.png"
+                                    alt="">
+                        </div></a>
+
+
+
+
+                    </div>
+                    <div class="inbox-end">
+                        <p>Copyright 2006-2017 Indochino Inc. All rights reserved.</p>
+                        <a href="">*See contest terms and conditions.</a>
+                    </div>
+                    <ul class="pagination justify-content-center">
+                        <li class="page-item "><a class="page-link"
+                                href="E:\anshif\bootstrap\project bootstrap.html">Previous</a></li>
+                        <li class="page-item "><a class="page-link" href="E:\anshif\bootstrap\forms.html">1</a></li>
+                        <li class="page-item "><a class="page-link" href="E:\anshif\bootstrap\tables.html">2</a></li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+</body>
+
+</html>

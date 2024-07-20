@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset='utf-8'>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <title>Page Title</title>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <link rel='stylesheet' type='text/css' media='screen'
+    href='https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css'>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+  <div class="col-sm-12">
+    
+  <form action="submit.php" method="post" class="was-validated">
+
+    <label for="">Enter your name :</label>
+    <input type="text" name="" id="n1" placeholder="enter your name" required>
+    <br><br>
+    <label for="">Enter your age :</label>
+    <input type="number" name="" id="n2" placeholder="enter your age" required>
+    <br><br>
+    <label for="email">Email:</label>
+    <input type="email" id="n4" name="email" placeholder="enter your email" required>
+    <br><br>
+    <label for="">Enter your place :</label>
+    <input type="text" name="" id="n3" placeholder="enter your place" required>
+    <br><br>
+
+    <div class="form-floating mb-3">
+      <input type="text" class="form-control" id="uname" placeholder="Enter username" name="uname" required>
+      <label for="uname" class="form-label">Username:</label>
+    </div>
+    <div class="form-floating mb-3">
+      <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd" required>
+      <label for="pwd" class="form-label">Password:</label>
+    </div>
+    <div class="form-check mb-3">
+      <input class="form-check-input" type="checkbox" id="myCheck" name="remember" required>
+      <label class="form-check-label" for="myCheck">I agree with the terms & conditions.</label>
+    </div>
+    <button type="submit" class="btn btn-primary" onclick="biodata()">Submit</button>
+  </form>
+  <script>
+    function biodata(){
+        var name,age,place,email;
+        name = document.getElementById('n1').value;
+        age = document.getElementById('n2').value;
+        place = document.getElementById('n3').value;
+        email = document.getElementById('n4').value;
+
+        document.write("<table border='1' height='500px' cellpadding='30px'> <tr> <th>Name</th> <th>Age</th><th>Place</th><th>Email</th> </tr>")
+        document.write("<tr> <td>"+name+"</td> <td>"+age+"</td><td>"+place+"</td><td>"+email+"</td> </tr> </table>")
+        // document.write("<h1 style='height:100px;Background-Color:cyan;width:200px;'> Name <br> "+name+"</h1>");
+        // document.write("<h1 style='height:100px;Background-Color:cyan;width:200px;'>" +age+"<br> years old </h1>");
+        // document.write("<h1 style='height:100px;Background-Color:cyan;width:300px;'> Place <br>"+place+"</h1> ");
+        // document.write("<h1 style='height:100px;Background-Color:cyan;width:300px;'>  email id is <br>"+email+"</h1> ");
+    }
+</script>
+
+  <ul class="pagination justify-content-center">
+    <li class="page-item"><a class="page-link" href="E:\anshif\bootstrap\project bootstrap.html">Previous</a></li>
+    <li class="page-item"><a class="page-link" href="E:\anshif\bootstrap\forms.html">1</a></li>
+    <li class="page-item"><a class="page-link" href="E:\anshif\bootstrap\tables.html">2</a></li>
+  </ul>
+</div>
+
+
+</body>
+
+</html>
